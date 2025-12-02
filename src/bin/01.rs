@@ -115,7 +115,7 @@ fn main() -> Result<()> {
         let mut next_pos = current_pos + normalised_distance;
 
         match next_pos {
-            0 | 100 => {
+            0 | 100 | -100 => {
                 zeroes_traversed += 1;
                 next_pos = 0;
             }
